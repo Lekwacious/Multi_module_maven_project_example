@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Domain" />
+        <module name="Repository" />
+        <module name="web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Domain" target="11" />
+      <module name="multiple_maven_project" target="11" />
+      <module name="Repository" target="11" />
+      <module name="web" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Domain" options="-parameters" />
+      <module name="Repository" options="-parameters" />
+      <module name="multiple_maven_project" options="-parameters" />
+      <module name="web" options="-parameters" />
+    </option>
+  </component>
+</project>
